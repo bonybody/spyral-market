@@ -1,0 +1,41 @@
+form.put_up {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+}
+div.item_tag {
+    width: fit-content;
+    margin: auto;
+}
+
+input[type='text'] {
+    width: 500px;
+    font-size: 1.5rem;
+}
+
+textarea {
+    font-size: 1.5rem;
+}
+
+.items {
+    margin: 0 auto;
+    height: 400px;
+    width: 500px;
+}
+
+
+
+.form_label {
+    margin-top: 70px;
+    margin-bottom: 150px;
+    font-size: 20px;
+    width: fit-content;
+    color: tomato;
+    border-bottom: 3px solid red;
+    padding-bottom: 10px;
+    text-align: left;
+    width: 500px;
+}
+

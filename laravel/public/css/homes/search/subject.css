@@ -1,0 +1,16 @@
+#subject_search {
+    text-align: center;
+}
+
+#search_subject {
+    font-size: 1.6rem;
+    margin: 20px 0;
+}
+
+#items_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin: 0 40px;
+}

@@ -1,0 +1,52 @@
+#box {
+    align-self: center;
+    flex-grow: 1;
+    display: flex;
+}
+
+form {
+    text-align: center;
+    align-self: center;
+    padding: 5vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5%;
+}
+
+form h2 {
+    margin: 0 auto;
+    font-size: 3vw;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+form p {
+    text-align: left;
+    margin-bottom: 0.5vw;
+    font-weight: bold;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#school, #course, #mail, #pass {
+    margin: 5vh 0;
+}
+
+select, input{
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    box-sizing: border-box;
+    padding: 0.3em;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: #555;
+    border: 1px solid #1b2538;
+    border-radius: 4px;
+    width: 500px;
+}
+
+input[type = 'submit'] {
+    width: 100px;
+}
+select:focus, input:focus {
+    border: 1px solid #fff;
+    outline: none;
+    box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}

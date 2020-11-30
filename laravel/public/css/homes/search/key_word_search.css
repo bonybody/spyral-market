@@ -1,0 +1,16 @@
+#keyword_search {
+    text-align: center;
+}
+
+#search_word, .search_category {
+    font-size: 1.6rem;
+    margin: 20px 0;
+}
+
+#items_wrap {
+    padding: 0 90px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

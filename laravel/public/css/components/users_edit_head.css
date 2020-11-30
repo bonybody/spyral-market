@@ -1,0 +1,59 @@
+.component_users_edit_head {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: tomato;
+}
+.users_edit_heading {
+    margin: 10px 0
+}
+.component_users_edit_head .users_edit_heading {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.component_users_edit_head .users_edit_heading:before,
+.component_users_edit_head .users_edit_heading:after {
+    content: "";
+    display: block;
+    border: 2px solid tomato;
+    height: 36px;
+    width: 20px;
+    position: absolute;
+}
+.component_users_edit_head .users_edit_heading:after {
+    right: 0;
+    top: 0;
+}
+.component_users_edit_head .users_edit_heading img {
+    height: 35px;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+.component_users_edit_head .users_edit_heading span:before,
+.component_users_edit_head .users_edit_heading span:after {
+    content: "";
+    display: block;
+    background: rgb(255, 220, 220);
+    width: 30px;
+    height: 55px;
+}
+.component_users_edit_head .users_edit_heading span:before {
+    border-left: 2px solid tomato;
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 9px;
+    top: -15px;
+}
+.component_users_edit_head .users_edit_heading span:after {
+    border-right: 2px solid tomato;
+    transform: rotate(-30deg);
+    position: absolute;
+    right: 9px;
+    top: 0px;
+    z-index: 2;
+}

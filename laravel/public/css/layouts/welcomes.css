@@ -1,0 +1,132 @@
+body {
+}
+body::-webkit-scrollbar { /* Chrome, Safari 対応 */
+    display: none;
+}
+
+#wrap {
+    margin: 0;
+    background-image: url("../../images/haikei.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+#main_right {
+    width: 50%;
+    height: 100%;
+    /*align-content: stretch;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_left {
+    width: 50%;
+    height: 100%;
+    /*align-content: stretch;*/
+
+    position: relative;
+}
+
+#login_or_register {
+    position: absolute;
+    top: 700px;
+    left: 30px;
+    width: 880px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_button:hover a {
+    background-color: dodgerblue;
+}
+
+.menu_button a {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: darkblue;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+
+}
+.menu_button a img {
+    height: 2.8rem;
+    margin-right: 2rem;
+    vertical-align: middle;
+    padding-bottom: 3px;
+
+    /*padding: 3px;*/
+}
+#sign_up a img {
+    padding-bottom: 10px;
+}
+#box {
+    width: fit-content;
+    /*flex-grow: 1;*/
+    display: flex;
+}
+
+form {
+    width: fit-content;
+    text-align: center;
+    align-self: center;
+    padding: 5vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5%;
+}
+
+form h2 {
+    margin: 0 auto;
+    font-size: 3vw;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+form p {
+    text-align: left;
+    margin-bottom: 0.5vw;
+    font-weight: bold;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#school, #course, #mail, #pass {
+    margin: 5vh 0;
+}
+
+select, input{
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    box-sizing: border-box;
+    padding: 0.3em;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: #555;
+    border: 1px solid #1b2538;
+    border-radius: 4px;
+    width: 500px;
+}
+
+input[type = 'submit'] {
+    width: 100px;
+}
+select:focus, input:focus {
+    border: 1px solid #fff;
+    outline: none;
+    box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}

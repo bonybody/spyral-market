@@ -1,0 +1,216 @@
+h3.title {
+    margin: 50px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+div.profile_edit {
+    margin: 50px auto;
+    width: 80%;
+}
+
+div.form_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+div.image_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+
+p.now_image_label {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+.uploadButton {
+    font-size: 1.3rem;
+    display:inline-block;
+    position:relative;
+    overflow:hidden;
+    border-radius:3px;
+    background:#fff;
+    color:tomato;
+    text-align:center;
+    padding:10px 0;
+    margin-left: 20px;
+    line-height:30px;
+    width:200px;
+    cursor:pointer;
+    border: 3px solid tomato;
+}
+.uploadButton:hover {
+    background:tomato;
+    color: #fff;
+    animation: ease;
+    transition: 0.3s;
+}
+
+.uploadButton img {
+    width: 30px;
+    height: 30px;
+    vertical-align: bottom;
+}
+
+.uploadButton input[type=file] {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+    opacity:0;
+}
+.uploadValue {
+    display:none;
+    background:rgba(255,255,255,1);
+    border-radius:3px;
+    padding:3px;
+    color:tomato;
+    font-size: 1rem;
+}
+
+.image, .name, .subject, .message {
+    min-height: 500px;
+    width: 500px;
+    margin: 10px 30px;
+    text-align: center;
+
+}
+div.form_main {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject .form_main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.form_main input[type='text'] {
+    border: 3px solid tomato;
+    border-radius: 3px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.form_main input[type='text']:focus {
+    box-shadow: 0 0 10px tomato;
+    border: 3px solid tomato;
+    text-decoration: none;
+    outline: 0;
+}
+
+.input_name {
+    font-size: 2rem;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+
+}
+
+input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font: 20px/26px 'Open Sans', Arial, sans-serif;
+    color: #000;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid tomato;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+div.message textarea {
+    border: 3px solid tomato;
+}
+
+div.message textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px tomato;
+}
+
+.submit {
+    margin: 50px;
+    text-align: center;
+}
+
+.submit input[type='submit'] {
+    font-size: 2rem;
+    font-family: 'Kosugi Maru', sans-serif;
+    padding: 20px 50px;
+    border: 3px solid tomato;
+    background-color: #fff;
+    color: tomato;
+}
+.submit input[type='submit']:hover {
+    color: #fff;
+    background-color: tomato;
+    transition: 0.3s;
+}
+.submit input[type='submit']:focus {
+    color: #fff;
+    background-color: tomato;
+    outline: none;
+}
+
+.form_error {
+    color: red;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+div.image_label .form_error {
+    margin: 10px -200px 10px 0;
+
+}
+

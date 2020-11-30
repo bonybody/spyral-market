@@ -1,0 +1,212 @@
+div.item {
+    min-width: 1500px;
+
+    /*フォント設定*/
+    font-family: 'Kosugi Maru', sans-serif;
+
+    /*flex設定*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+
+    height: 700px;
+    padding: 25px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+div.item_image {
+    position: relative;
+    height: 700px;
+    width: 700px;
+}
+
+.item_image img {
+    width: 700px;
+    height: 700px;
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.item_details {
+    align-self:flex-start;
+
+    width: 300px;
+    margin: 50px 25px 0 25px;
+    position: relative;
+    padding: 0 125px;
+}
+
+.item_name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-right: -100px;
+}
+
+.item_price {
+    font-size: 2rem;
+    color: tomato;
+}
+
+.item_head {
+    width: 300px;
+    /*margin: 0 auto;*/
+    padding: 10px 0;
+    font-size: 20px;
+    color: tomato;
+}
+.heading {
+    margin: 10px 0
+}
+.item_head .heading {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 3px;
+}
+.item_head .heading span{
+    padding: 20px 0;
+}
+.item_head .heading:before {
+    content: "";
+    border-bottom: 3px solid tomato;
+    /*bottom: 10px;*/
+    bottom: 0;
+    height: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.item_head .heading:after {
+    border-bottom: 3px solid #ddd;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    width: 500px;
+    z-index: 1;
+}
+.text_label {
+    font-size: 1.4rem;
+    border-bottom: solid 1px #000;
+    width: 100px;
+    padding-bottom: 5px;
+    margin: 50px 0 20px 0;
+}
+.item_text {
+    margin: 40px 0;
+    min-height: 100px;
+    word-wrap: break-word;
+}
+
+div.tags {
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a.tag, a.sbj {
+    margin: 0 10px 10px 10px;
+}
+div.sbjs {
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.tags span, div.sbjs span {
+    margin-top: 3px;
+}
+
+.tag, .sbj {
+    line-height: 26px;
+    position: relative;
+    display: block;
+    height: 26px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 0 20px 0 23px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    text-decoration: none;
+    color: #455a64;
+    border-radius: 3px 0 0 3px;
+    background: #cfd8dc;
+}
+.tag::before, .tag::after,
+.sbj::before, .sbj::after
+{
+    background: #fafcfc;/*背景色*/
+}
+.tag::before, .sbj::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+    content: '';
+    border-radius: 10px;
+}
+.tag::after, .sbj::after {
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 15px 0 15px 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent #cfd8dc;
+    border-radius: 4px;
+}
+.tag:hover, .sbj:hover {
+    color: #ffffff;
+    background-color: tomato;
+}
+.tag:hover::after,
+.sbj:hover::after {
+    border-left-color: tomato;
+    margin-bottom: 10px;
+}
+
+.seller_info {
+    display: flex;
+    align-items: center;
+}
+
+.user_image_items {
+    margin-right: 10px;
+}
+
+.seller_name {
+    font-size: 2rem;
+}
+.seller_name a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s;
+}
+
+.seller_name a:hover {
+    color: gray;
+}
+
+.buy {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.buy_button {
+    border: none;
+    border-radius: 100px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.5rem;
+    background-color: tomato;
+    color: #fff;
+}
+
+.buy_button:hover {
+    transition: 0.3s;
+    opacity: 0.8;
+}

@@ -1,0 +1,10 @@
+#items_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:stretch;
+    margin: 0 80px;
+}
+
+.follow_user {
+    margin-bottom: 30px;
+}

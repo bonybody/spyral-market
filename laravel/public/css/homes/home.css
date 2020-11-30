@@ -1,0 +1,23 @@
+.head_text {
+    margin-top: 50px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    /*padding: 30px;*/
+    margin: 80px;
+    margin-top: 0;
+    align-items:stretch;
+    justify-content: flex-start;
+}
+
+.recommend, .new {
+    width: 100%;
+}
+
+.head_text{
+    text-align: center;
+    font-size: 2rem;
+}
+
