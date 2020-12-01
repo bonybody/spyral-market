@@ -50338,6 +50338,8 @@ var render = function() {
           _c("p", { staticClass: "form_label" }, [_vm._v("カテゴリ選択")]),
           _vm._v(" "),
           _c("p", { staticClass: "item_category_wrap" }, [
+            _c("span", [_vm._v("大カテゴリを選択")]),
+            _vm._v(" "),
             _c(
               "select",
               {
@@ -50367,24 +50369,20 @@ var render = function() {
                   }
                 }
               },
-              [
-                _c(
-                  "option",
-                  { attrs: { label: "大カテゴリを選択", selected: "" } },
-                  [_vm._v("大カテゴリを選択")]
-                ),
-                _vm._v(" "),
-                _vm._l(_vm.categories, function(category) {
-                  return _c("option", { domProps: { value: category.id } }, [
-                    _vm._v(_vm._s(category.name))
-                  ])
-                })
-              ],
-              2
+              _vm._l(_vm.categories, function(category) {
+                return _c("option", { domProps: { value: category.id } }, [
+                  _vm._v(_vm._s(category.name))
+                ])
+              }),
+              0
             )
           ]),
           _vm._v(" "),
           _c("P", { staticClass: "item_category_wrap" }, [
+            _c("span", { attrs: { label: "中カテゴリを選択" } }, [
+              _vm._v("中カテゴリを選択")
+            ]),
+            _vm._v(" "),
             _c(
               "select",
               {
@@ -50418,20 +50416,14 @@ var render = function() {
                   }
                 }
               },
-              [
-                _c("option", { attrs: { label: "中カテゴリを選択" } }, [
-                  _vm._v("中カテゴリを選択")
-                ]),
-                _vm._v(" "),
-                _vm._l(_vm.sub_categories, function(sub_category) {
-                  return _vm.category == sub_category.category_id
-                    ? _c("option", { domProps: { value: sub_category.id } }, [
-                        _vm._v(_vm._s(sub_category.name) + "\n                ")
-                      ])
-                    : _vm._e()
-                })
-              ],
-              2
+              _vm._l(_vm.sub_categories, function(sub_category) {
+                return _vm.category == sub_category.category_id
+                  ? _c("option", { domProps: { value: sub_category.id } }, [
+                      _vm._v(_vm._s(sub_category.name) + "\n                ")
+                    ])
+                  : _vm._e()
+              }),
+              0
             )
           ]),
           _vm._v(" "),
@@ -64453,8 +64445,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\phpdocs\HEW_01\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\phpdocs\HEW_01\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

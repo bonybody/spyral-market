@@ -44,15 +44,15 @@
             <p class="form_label">カテゴリ選択</p>
 
             <p class="item_category_wrap">
+                <span>大カテゴリを選択</span>
                 <select v-model="category" name="category" class="item_category" options="categories">
-                    <option label="大カテゴリを選択" selected>大カテゴリを選択</option>
                     <option v-for="category in categories" :value="category.id">{{ category.name }}</option>
                 </select>
             </p>
 
             <P class="item_category_wrap">
+                <span label="中カテゴリを選択">中カテゴリを選択</span>
                 <select v-model="sub_category" name="sub_category" class="item_category" id="item_sub_category" options="sub_categories">
-                    <option label="中カテゴリを選択">中カテゴリを選択</option>
                     <option v-for="sub_category in sub_categories" v-if="category == sub_category.category_id"
                             :value="sub_category.id">{{sub_category.name}}
                     </option>

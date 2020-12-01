@@ -21,6 +21,8 @@ class CreateItemsTable extends Migration
             $table->bigInteger('seller_id')->unsigned();
             $table->enum('status', ['sale' ,'trade', 'sold'])->nullable(false)->default('sale');
             $table->bigInteger('category_id')->unsigned();
+            $table->bigInteger('sub_category_id')->unsigned();
+            $table->bigInteger('image')->nullable();
             $table->timestamps();
 
             $table->foreign('seller_id')
@@ -31,6 +33,11 @@ class CreateItemsTable extends Migration
             $table->foreign('category_id')
                 ->references('id')
                 ->on('categories')
+                ->onDelete('cascade');
+
+            $table->foreign('sub_category_id')
+                ->references('id')
+                ->on('sub_categories')
                 ->onDelete('cascade');
         });
     }
