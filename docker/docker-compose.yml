@@ -1,4 +1,8 @@
 version: "3"
+volumes:
+  volume-node-modules:
+  volume-db-data:
+  volume-vendor:
 services:
   laravel:
     build:
@@ -7,15 +11,11 @@ services:
       - "80:8000"
     volumes:
       - "../laravel:/var/www"
+      - "volume-node-modules:/var/www/node_modules"
+      - "volume-vendor:/var/www/vendor"
     environment:
       - HOST
       - TZ
-      - HTTP_PROXY
-      - http_proxy
-      - HTTPS_PROXY
-      - https_proxy
-      - FTP_PROXY
-      - ftp_proxy
 
     tty: true
 
@@ -23,10 +23,10 @@ services:
   db:
     image: mariadb:10.5
     ports:
-    - "3306:3306"
+      - "3306:3306"
     volumes:
-    - "./db/data:/var/lib/mysql"
-    - "./db/initdb.d:/docker-entrypoint-initdb.d"
+      - "./db/data:/var/lib/mysql"
+      - "./db/initdb.d:/docker-entrypoint-initdb.d"
     environment:
       - MYSQL_ROOT_PASSWORD
       - MYSQL_DATABASE
